@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <div class="div">
+        <ul class="ul">
+            <li class="li">list 1</li>
+            <li class="li">list 2</li>
+            <li class="li">list 3</li>
+            <ol>
+                <li class="li">list 4</li>
+                <li class="li">list 5</li>
+                <li class="li">list 6</li>
+                <p>This is a paragrapgh</p>
+            </ol>
+        </ul>
+    </div> -->
+    <div>
+        <table class="table">
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Akash</td>
+                <td>22</td>
+            </tr>
+            <tr>
+               <td>2</td>
+                <td>Ramesh</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vignesh</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        const items = document.querySelector(".table").childNodes;
+        items.forEach((item) => {
+            console.log(item.innerText)
+        })
+        //console.log(items)
+    </script>
+</body>
+</html>
